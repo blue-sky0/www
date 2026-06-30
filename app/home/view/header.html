@@ -1,0 +1,222 @@
+
+
+<div class="container main" style="height: auto !important;">
+	<!-- 中间 -->
+	<div class="row" style="height: auto !important;">
+		<!-- 左侧栏 -->
+
+		<div class="runoob-col-md2">
+			<div class="left-column" >
+				<div class="tab" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">
+					<i class="fa fa-list" aria-hidden="true"></i>
+					<span>{$S} 教程</span>
+
+				</div>
+				<div class="sidebar-box gallery-list">
+					<div class="design" id="leftcolumn">
+						<a target="_top" data-p="par" title="HTML 教程" href="/html/html-tutorial.html"
+							style="background-color: rgb(150, 185, 125); font-weight: bold; color: rgb(255, 255, 255);"><i
+								class="fa fa-tag" aria-hidden="true"></i>
+							HTML 教程 </a>
+						<a target="_top" data-p="par" title="HTML 简介" href="/html/html-intro.html">
+							HTML 简介 </a>
+						
+						<br>
+						<h2 class="left"><span class="left_h2">HTML5</span></h2> <a target="_top" data-p="par"
+							title="HTML5 教程" href="/html/html5-intro.html">
+							HTML5 教程 </a>
+
+						<a target="_top" title="HTML5 浏览器支持" href="html5-browsers.html"> HTML5 浏览器支持 </a> <a
+							target="_top" data-p="par" title="HTML5 新元素" href="/html/html5-new-element.html">
+							HTML5 新元素 </a>
+
+						
+						<br>
+						<h2 class="left"><span class="left_h2">HTML</span> 参考手册</h2>
+						<a target="_top" href="/tags/html-reference.html">
+							HTML 标签列表(字母排序) </a>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col middle-column" style="height: auto !important;">
+
+			<div class="article" style="height: auto !important;">
+
+				<!-- 顶部上下篇链接 -->
+				<div class="previous-next-links">
+					<div class="previous-design-link" style="display: none;"> </div>
+					<div class="next-design-link"><a href="https://www.runoob.com/html/html-intro.html" rel="next"
+							title="HTML 简介">HTML 简介</a> <a href="https://www.runoob.com/html/html-intro.html"><i
+								style="font-size:16px;" class="fa fa-arrow-right" aria-hidden="true"></i></a></div>
+				</div>
+
+				<!-- 图片显示 -->
+				<div class="article-heading-ad" style="display: block;">
+				</div>
+				<!-- 文章内容 -->
+				<div class="article-body">
+
+					
+				</div>
+				<!-- 文章内容 结束-->
+				<!-- 底部上下篇链接 -->
+				<div class="previous-next-links">
+					<div class="previous-design-link" style="display: none;"> </div>
+					<div class="next-design-link"><a href="https://www.runoob.com/html/html-intro.html" rel="next"
+							title="HTML 简介">HTML 简介</a> <a href="https://www.runoob.com/html/html-intro.html"><i
+								style="font-size:16px;" class="fa fa-arrow-right" aria-hidden="true"></i></a></div>
+				</div>
+				<!-- 右边栏 -->
+				<div class="fivecol last right-column">
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+						{foreach $MainTitledata as $item}
+                            <h2 class="left"><span class="left_h2">{$item.title}</span></h2>
+                            <!-- <a target="_top" data-p="par" title="'.$leftTitle_con_data[$j][1].'" href="index.php?param='.$leftTitle_con_data[$j][2].'" style="background-color: rgb(150, 185, 125); font-weight: bold; color: rgb(255, 255, 255);"><i class="fa fa-tag" aria-hidden="true"></i></a> -->
+                                {foreach $LeftTitledata as $items}
+                                    {if $items.title eq $item.title}
+                                        <a target="_top" data-p="par" title="{$items.a_Tips}" href="?S={$S}&page={$items.a_href}">{$items.a_content}</a>
+                                    {/if}
+                                {/foreach}
+                            {/foreach}
+
+
+<div class="article-intro" id="content">
+
+						<h1>HTML 教程- <span class="color_h1">(HTML5 标准)</span></h1>
+						<div class="tutintro">
+							<img decoding="async"
+								src="https://www.runoob.com/wp-content/uploads/2013/06/image-icon.png">
+							<p>
+								超文本标记语言（英语：HyperText Markup Language，简称：HTML）是一种用于创建网页的标准标记语言。</p>
+							<p>您可以使用 HTML 来建立自己的 WEB 站点，HTML 运行在浏览器上，由浏览器来解析。</p>
+							<p>在本教程中，您将学习如何使用 HTML 来创建站点。</p>
+							<p>HTML 很容易学习！相信您能很快学会它！</p>
+						</div>
+
+						<h2 class="tutheader">HTML 实例</h2>
+						<p>本教程包含了数百个 HTML 实例。</p>
+						<p>使用本站的编辑器，您可以轻松实现在线修改 HTML，并查看实例运行结果。</p>
+
+
+
+						<blockquote>
+							<p><strong>注意：</strong>对于中文网页需要使用 <strong>&lt;meta charset="utf-8"&gt;</strong>
+								声明编码，否则会出现乱码。有些浏览器(如 360 浏览器)会设置 GBK 为默认编码，则你需要设置为 <strong>&lt;meta
+									charset="gbk"&gt;。</strong></p>
+						</blockquote>
+
+
+
+
+						<div class="example">
+							<h2 class="example">实例</h2>
+							<div class="example_code">
+								<div class="hl-main"><span class="hl-brackets">&lt;</span><span
+										class="hl-code">!</span><span class="hl-var">DOCTYPE</span><span
+										class="hl-code"> </span><span class="hl-var">html</span><span
+										class="hl-brackets">&gt;</span><span class="hl-code">
+									</span><span class="hl-brackets">&lt;</span><span
+										class="hl-reserved">html</span><span class="hl-brackets">&gt;</span><span
+										class="hl-code">
+									</span><span class="hl-brackets">&lt;</span><span
+										class="hl-reserved">head</span><span class="hl-brackets">&gt;</span><span
+										class="hl-code">
+									</span><span class="hl-brackets">&lt;</span><span
+										class="hl-reserved">meta</span><span class="hl-code"> </span><span
+										class="hl-var">charset</span><span class="hl-code">=</span><span
+										class="hl-quotes">"</span><span class="hl-string">utf-8</span><span
+										class="hl-quotes">"</span><span class="hl-brackets">&gt;</span><span
+										class="hl-code">
+									</span><span class="hl-brackets">&lt;</span><span
+										class="hl-reserved">title</span><span class="hl-brackets">&gt;</span><span
+										class="hl-code">菜鸟教程(runoob.com)</span><span
+										class="hl-brackets">&lt;/</span><span class="hl-reserved">title</span><span
+										class="hl-brackets">&gt;</span><span class="hl-code">
+									</span><span class="hl-brackets">&lt;/</span><span
+										class="hl-reserved">head</span><span class="hl-brackets">&gt;</span><span
+										class="hl-code">
+									</span><span class="hl-brackets">&lt;</span><span
+										class="hl-reserved">body</span><span class="hl-brackets">&gt;</span><span
+										class="hl-code">
+									</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">h1</span><span
+										class="hl-brackets">&gt;</span><span class="hl-code">我的第一个标题</span><span
+										class="hl-brackets">&lt;/</span><span class="hl-reserved">h1</span><span
+										class="hl-brackets">&gt;</span><span class="hl-code">
+									</span><span class="hl-brackets">&lt;</span><span class="hl-reserved">p</span><span
+										class="hl-brackets">&gt;</span><span class="hl-code">我的第一个段落。</span><span
+										class="hl-brackets">&lt;/</span><span class="hl-reserved">p</span><span
+										class="hl-brackets">&gt;</span><span class="hl-code">
+									</span><span class="hl-brackets">&lt;/</span><span
+										class="hl-reserved">body</span><span class="hl-brackets">&gt;</span><span
+										class="hl-code">
+									</span><span class="hl-brackets">&lt;/</span><span
+										class="hl-reserved">html</span><span class="hl-brackets">&gt;</span></div>
+								<button class="copy-code-button" type="button" data-clipboard-text="<!DOCTYPE html>
+<html>
+<head>
+<meta charset=&quot;utf-8&quot;>
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+    <h1>我的第一个标题</h1>
+    <p>我的第一个段落。</p>
+</body>
+</html>" style="display: none;"></button>
+							</div>
+							<br>
+							<a target="_blank" href="/try/try.php?filename=tryhtml_intro" class="tryitbtn"
+								rel="noopener noreferrer">尝试一下 »</a>
+							<p>点击 "尝试一下" 按钮查看在线实例</p>
+						</div>
+						<hr>
+						<h2>
+							HTML文档的后缀名</h2>
+						<ul>
+							<li><span class="marked">.html</span></li>
+							<li><span class="marked">.htm</span></li>
+						</ul>
+						<p>以上两种后缀名没有区别，都可以使用。</p>
+						<p><a href="/html/html-intro.html">开始学习HTML!</a></p>
+
+						<h2 class="tutheader">HTML 实例</h2>
+
+						<p>在 HTML 手册中包含了数百个在线实例，您可以在线编辑并查看运行结果。</p>
+						<p><a href="/html/html-examples.html" target="_blank" rel="noopener noreferrer">查看 HTML 实例！</a>
+						</p>
+
+
+
+						<h2 class="tutheader">HTML 参考手册</h2>
+						<p>在菜鸟教程中，我们提供了完整的 HTML 参考手册，其中包括标签、属性、颜色、实体等等。</p>
+						<p>
+							<a href="/tags/html-reference.html">HTML 参考手册</a>
+						</p>
+						<h2 class="tutheader">HTML/CSS/JS 在线工具</h2>
+						<p>HTML/CSS/JS 在线工具可以在线编辑 HTML、CSS、JS 代码，并实时查看效果，你也可以将优质代码保存分享：<a
+								href="https://www.jyshare.com/front-end/61" target="_blank"
+								rel="noopener noreferrer">https://www.jyshare.com/front-end/61</a></p> <!-- 其他扩展 -->
+</div>
+
+
+
+<div class="previous-next-links">
+			<div class="previous-design-link"><a href="https://www.runoob.com/php/php-switch.html"><i style="font-size:16px;" class="fa fa-arrow-left" aria-hidden="true"></i></a> <a href="https://www.runoob.com/php/php-switch.html" rel="prev" title="PHP Switch 语句">PHP Switch 语句</a> </div>
+			<div class="next-design-link"><a href="https://www.runoob.com/php/php-arrays-sort.html" rel="next" title="PHP 数组排序">PHP 数组排序</a> <a href="https://www.runoob.com/php/php-arrays-sort.html"><i style="font-size:16px;" class="fa fa-arrow-right" aria-hidden="true"></i></a></div>
+		<div></div>
+</div>
+
+
+
+
+<div class="previous-next-links">
+			<div class="previous-design-link"><a href="https://www.runoob.com/tags/tag-video.html"><i style="font-size:16px;" class="fa fa-arrow-left" aria-hidden="true"></i></a> <a href="https://www.runoob.com/tags/tag-video.html" rel="prev" title="HTML <video> 标签">HTML &lt;video&gt; 标签</a> </div>
+			<div class="next-design-link" style="display: none;"><a href="http://www.runoob.com/tags/tag-video.html" rel="next"> HTML &lt;video&gt; 标签</a> <a href="http://www.runoob.com/tags/tag-video.html"><i style="font-size:16px;" class="fa fa-arrow-right" aria-hidden="true"></i></a></div>
+		</div>

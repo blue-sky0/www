@@ -1,0 +1,31 @@
+{
+    "name": "sky/www",
+    "description": "在线教程学习网站",
+    "type": "project",
+    "require": {
+        "php": ">=7.4",
+        "smarty/smarty": "^3.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "core\\": "core/",
+            "home\\": "app/home/",
+            "admin\\": "app/admin/",
+            "models\\": "app/models/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "rm -rf vendor/smarty"
+        ],
+        "seed:admin": "php scripts/seed_admin.php"
+    }
+}

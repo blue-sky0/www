@@ -1,0 +1,8 @@
+# 禁止 PHP 执行
+<FilesMatch "\.php$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# 禁止目录浏览
+Options -Indexes
