@@ -122,8 +122,8 @@ www/
 
 ```
 ┌─────────────┐      1:N       ┌─────────────────┐
-│  S_course   │ ────────────── │   S_subjbect    │
-│  课程类别    │                │  (学科) ⚠️表名拼写错误 │
+│  S_course   │ ────────────── │   S_subject    │
+│  课程类别    │                │  (学科)         │
 └─────────────┘                └────────┬────────┘
                                        │
                           ┌────────────┼────────────┐
@@ -147,7 +147,7 @@ www/
 |------|------|--------|
 | `S_user` | 后台用户表 | - |
 | `S_course` | 课程类别表 | - |
-| `S_subjbect` | 学科表 ⚠️ | - |
+| `S_subject` | 学科表 | - |
 | `S_leftMainTitle` | 左侧主标题表 | - |
 | `S_leftSideSubtitle` | 左侧副标题表 | - |
 | `S_rightContent` | 右侧正文内容表 | 460+ |
@@ -155,13 +155,6 @@ www/
 | `S_backSystem` | 后台系统配置表 | - |
 | `S_admin` | 后台管理员表 | - |
 | `S_operation_logs` | 操作日志表 | - |
-
-### ⚠️ 表名拼写错误
-
-> `S_subjbect` 正确拼写应为 `S_subject`。需手动执行迁移脚本：
-> ```bash
-> mysql -u your_user -p your_database < scripts/migrate_fix_typo.sql
-> ```
 
 ---
 
